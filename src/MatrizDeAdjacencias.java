@@ -6,18 +6,20 @@ public class MatrizDeAdjacencias {
 
 	public static void main(String[] args){
 		
+		
+		String fileName =  "C:/Users/Higur/Desktop/Grafo.txt"; //Caminho do arquivo
+		
 		try {
-			LerArquivo();
+			LerArquivo(fileName);
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		
 	}
-	public static void LerArquivo()throws IOException {
+	public static void LerArquivo(String fileName)throws IOException {
 		String [] splitLinha;
 		
-		String fileName = "C:/Users/Higur/Desktop/Grafo.txt";
 		
 		BufferedReader ler = new BufferedReader(new FileReader(fileName));
 		
